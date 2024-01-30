@@ -1,0 +1,148 @@
+/* Variables para colores y fuentes */
+:root {
+  --primary-color: #190f59;
+  --hover-color: #4caf50;
+  --button-bg-color: #05c7f2;
+  --button-hover-bg-color: #023e73;
+  --font-family: Arial, sans-serif;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Reset y Estilos Base */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del Header */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .logo img {
+  height: 5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 2rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--hover-color);
+}
+
+#menu-toggle {
+  display: none;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Estilos Responsive para Nav */
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px 15px;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: inline-block;
+  }
+}
+
+/* Estilos del Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+footer nav ul li {
+  display: inline;
+}
+
+footer nav a {
+  color: white;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos Responsive para Footer */
+@media screen and (max-width: 600px) {
+  footer nav ul {
+    display: block;
+  }
+
+  footer nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  footer nav a {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,70 @@
+/* Variables para colores y fuentes */
+:root {
+  --primary-color: #190f59;
+  --hover-color: #4caf50;
+  --button-bg-color: #05c7f2;
+  --button-hover-bg-color: #023e73;
+  --font-family: Arial, sans-serif;
+  --overlay-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos del Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--overlay-color);
+  z-index: 0;
+}
+
+.hero > div {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1, .hero p {
+  text-shadow: 0.3rem 0.3rem 0.6rem var(--overlay-color);
+  margin-bottom: 5rem;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+}
+
+.hero p {
+  font-size: 1.8em;
+}
+
+/* Botón de Descarga del CV */
+.download-button {
+  background-color: var(--button-bg-color);
+  color: white;
+  padding: 1.2rem 2.4rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 0.4rem 0.8rem rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+}
+
+.download-button:hover {
+  background-color: var(--button-hover-bg-color);
+  transform: scale(1.05);
+}

@@ -1,0 +1,325 @@
+/* Estilos existentes */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.main-info {
+  padding: 4rem;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profile-pic {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.4rem solid white;
+}
+
+.text-content {
+  max-width: 60%;
+}
+
+/* Integración con estilos existentes y variables */
+.text-content p {
+  font-family: var(--font-family); /* Usando tu fuente definida */
+  line-height: 1.6;
+  color: white; /* Asumiendo que el texto será sobre un fondo oscuro */
+}
+
+.text-content .tech,
+.text-content .tools,
+.text-content .database {
+  font-style: italic;
+  background-color: var(--button-bg-color); /* Color primario para el fondo */
+  color: black;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 2rem; /* Espacio adicional entre imagen y texto */
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  .text-content p {
+    color: #ddd; /* Color más claro para pantallas más pequeñas, si es necesario */
+  }
+
+  .main-info {
+    padding: 2rem; /* Reducir el padding en pantallas más pequeñas */
+  }
+}
+
+/*Seccion de Skills*/
+.skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.tooltip {
+  display: block;
+  visibility: hidden;
+  width: auto;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 0.6rem;
+  padding: 0.5rem 0.5rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -6rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.skill:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.skill-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+}
+
+.skill > span {
+  flex-grow: 1;
+  white-space: nowrap; /* Evita que el texto se rompa en líneas */
+}
+
+.skill-level {
+  width: 60%;
+  height: 1rem;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.skill-bar {
+  height: 100%;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to right, #4caf50, #81c784);
+  animation: growSkillBar 2s ease-out forwards;
+}
+
+@keyframes growSkillBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--bar-width);
+  }
+}
+
+.skill-bar-90 {
+  --bar-width: 90%;
+}
+.skill-bar-80 {
+  --bar-width: 80%;
+}
+.skill-bar-60 {
+  --bar-width: 60%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skill {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skill-icon {
+    margin-bottom: 0.5rem;
+  }
+
+  .skill-level {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .tooltip {
+    margin-left: -45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skill {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-icon {
+    margin-bottom: 1rem;
+  }
+
+  .tooltip {
+    left: 0%;
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
+
+  .skill-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Elimina el margen predeterminado */
+  }
+
+  .skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+}
+
+/* Herramientas tecnicas */
+.skills-table {
+  text-align: center;
+  max-width: 90rem; /* Aumentado para mejor visualización */
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff; /* Fondo claro para el contraste */
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  border-radius: 1rem; /* Bordes redondeados */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Columnas más anchas */
+  gap: 1.5rem; /* Espacio entre celdas aumentado */
+  padding: 2rem;
+}
+
+.cell {
+  border: 0.1rem solid #ddd;
+  padding: 1.5rem;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.8rem; /* Bordes redondeados */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  cursor: pointer; /* Cursor tipo puntero */
+}
+
+.cell:hover {
+  transform: translateY(-0.5rem); /* Efecto hover */
+  box-shadow: 0 .6rem 1.2rem rgba(0, 0, 0, 0.2); /* Sombra al hacer hover */
+}
+
+.skill-logo {
+  width: 6rem; /* Tamaño fijo para todas las imágenes */
+  height: 6rem; /* Altura fija para mantener uniformidad */
+  object-fit: contain; /* Mantiene la relación de aspecto sin cortar la imagen */
+  margin-bottom: 1.5rem; /* Espaciado entre la imagen y el título */
+}
+
+.cell .title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 0.8rem;
+}
+
+.cell .description {
+  font-size: 1.4rem;
+  color: #555; /* Color un poco más oscuro para mejor legibilidad */
+}
+
+/* Estilos específicos para las categorías, puedes ajustar los colores como prefieras */
+.cell.frontend {
+  background-color: #e0f7fa;
+}
+
+.cell.backend {
+  background-color: #e8eaf6;
+}
+
+.cell.bases-datos {
+  background-color: #e0f2f1;
+}
+
+.cell.otras-herramientas {
+  background-color: #f3e5f5;
+}
+
+/*Educacion y Certificaciones*/
+.education {
+  color: #333;
+  margin: auto;
+  padding: 2rem;
+}
+
+.education h2 {
+  margin-bottom: 3rem;
+  font-size: 2.8rem;
+}
+
+.education-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.education-item {
+  margin-bottom: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0,0,0,0.1); /* Añade una sombra para resaltar cada elemento */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Efecto suave al pasar el mouse */
+}
+
+.education-item:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.6rem 1.2rem rgba(0,0,0,0.15);
+}
+
+.education-content h3 {
+  margin: 0 0 1rem 0;
+  color: var(--primary-color); /* Un tono de azul más claro para los títulos */
+  font-size: 2rem;
+}
+
+.education-date {
+  font-style: italic;
+  font-size: 1.6rem;
+  color: #7f8c8d; /* Un gris verdoso suave */
+}
+
+.education-description {
+  font-size: 1.6rem;
+  line-height: 1.6; /* Mejora la legibilidad del párrafo */
+  color: #2c3e50; /* Un color más oscuro para el texto */
+}
+

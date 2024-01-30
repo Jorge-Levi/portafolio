@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Mí - Jorge Levi</title>
+    <link rel="icon" href="./images/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/generales.css" />
+    <link rel="stylesheet" href="./css/aboutme.css" />
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <header>
+      <!-- Sección del Logo -->
+      <div class="logo">
+        <img
+          src="./images/logo.png"
+          alt="Logo de Jorge Levi - Desarrollador Web"
+        />
+      </div>
+
+      <!-- Menú de Navegación -->
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./aboutme.html">Sobre Mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón para menú desplegable en móviles -->
+      <button id="menu-toggle">Menú</button>
+    </header>
+
+    <div class="container">
+      <section class="main-info flex-container">
+        <img
+          src="./images/foto-perfil.jpeg"
+          alt="Foto de Jorge Levi"
+          class="profile-pic"
+        />
+        <div class="text-content">
+          <h2>Acerca de Mí</h2>
+          <p>
+            <span class="highlight">Apasionado desarrollador Full Stack</span>,
+            transformo ideas en realidades digitales con una paleta tecnológica
+            que abarca desde <span class="tech">HTML</span> y
+            <span class="tech">CSS</span> hasta
+            <span class="tech">React</span> y <span class="tech">Java</span>. Mi
+            <span class="focus">enfoque creativo</span> se fusiona con la
+            precisión técnica en cada proyecto, utilizando herramientas como
+            <span class="tools">Bootstrap</span>,
+            <span class="tools">Tailwind CSS</span>, y
+            <span class="tools">Figma</span>. Con experiencia en
+            <span class="database">bases de datos diversas</span> y un historial
+            de éxito en entornos dinámicos, estoy listo para llevar la
+            innovación a su máximo potencial.
+          </p>
+        </div>
+      </section>
+
+      <section class="skills">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skill-category">
+          <h3>Lenguajes de Programación</h3>
+          <ul>
+            <li class="skill">
+              <img
+                src="./images/jsicon.png"
+                alt="JavaScript"
+                class="skill-icon"
+              />
+              <span>JavaScript</span>
+              <div class="skill-level">
+                <div class="skill-bar skill-bar-90"></div>
+              </div>
+              <span class="tooltip"
+                >Experiencia en desarrollo web con JavaScript</span
+              >
+            </li>
+            <li class="skill">
+              <img src="./images/phpicon.png" alt="PHP" class="skill-icon" />
+              <span>PHP</span>
+              <div class="skill-level">
+                <div class="skill-bar skill-bar-90"></div>
+              </div>
+              <span class="tooltip">Experiencia en desarrollo web con PHP</span>
+            </li>
+            <li class="skill">
+              <img src="./images/javaicon.png" alt="Java" class="skill-icon" />
+              <span>Java</span>
+              <div class="skill-level">
+                <div class="skill-bar skill-bar-80"></div>
+              </div>
+              <span class="tooltip"
+                >Experiencia en desarrollo web con Java</span
+              >
+            </li>
+            <li class="skill">
+              <img
+                src="./images/pythonicon.png"
+                alt="Python"
+                class="skill-icon"
+              />
+              <span>Python</span>
+              <div class="skill-level">
+                <div class="skill-bar skill-bar-60"></div>
+              </div>
+              <span class="tooltip"
+                >Experiencia en desarrollo web con Python</span
+              >
+            </li>
+            <li class="skill">
+              <img src="./images/csharpicon.png" alt="C#" class="skill-icon" />
+              <span>C#</span>
+              <div class="skill-level">
+                <div class="skill-bar skill-bar-60"></div>
+              </div>
+              <span class="tooltip">Experiencia en desarrollo web con C#</span>
+            </li>
+            <!-- Repetir para más habilidades -->
+          </ul>
+        </div>
+        <!-- Repetir para más categorías -->
+
+        <h3>Herramientas</h3>
+        <section class="skills-table">
+          <div class="grid">
+            <!-- HTML -->
+            <div class="cell frontend">
+              <img
+                src="./images/htmlicon.png"
+                alt="HTML Logo"
+                class="skill-logo"
+              />
+              <!-- <a href="https://www.flaticon.com/free-icons/html" title="html icons">Html icons created by Freepik - Flaticon</a> -->
+              <div class="title">HTML</div>
+              <div class="description">HyperText Markup Language</div>
+            </div>
+            <!-- CSS -->
+            <div class="cell frontend">
+              <img
+                src="./images/CSSICON.png"
+                alt="CSS Logo"
+                class="skill-logo"
+              />
+              <div class="title">CSS</div>
+              <div class="description">Cascading Style Sheets</div>
+            </div>
+            <!-- Bootstrap -->
+            <div class="cell frontend">
+              <!-- <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a> -->
+              <img
+                src="./images/bootstrapicon.png"
+                alt="Bootstrap Logo"
+                class="skill-logo"
+              />
+              <div class="title">Bootstrap</div>
+              <div class="description">
+                Framework CSS para Desarrollo Responsivo y Rápido
+              </div>
+            </div>
+            <!-- Tailwind CSS -->
+            <div class="cell frontend">
+              <!-- <a href="https://www.flaticon.com/free-icons/bootstrap" title="bootstrap icons">Bootstrap icons created by Freepik - Flaticon</a> -->
+              <img
+                src="./images/tailwindlogo.png"
+                alt="Tailwind CSS Logo"
+                class="skill-logo"
+              />
+              <div class="title">Tailwind CSS</div>
+              <div class="description">Framework CSS de utilidad primero</div>
+            </div>
+            <!-- jQuery -->
+            <div class="cell frontend">
+              <!-- <a href="https://iconscout.com/icons/jquery" class="text-underline font-size-sm" target="_blank">Jquery</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a> -->
+              <img
+                src="./images/jqueryicon.png"
+                alt="jQuery Logo"
+                class="skill-logo"
+              />
+              <div class="title">jQuery</div>
+              <div class="description">
+                Biblioteca JavaScript rápida y versátil
+              </div>
+            </div>
+            <!-- React -->
+            <div class="cell frontend">
+              <img
+                src="./images/reactlogo.png"
+                alt="React Logo"
+                class="skill-logo"
+              />
+              <div class="title">React Js</div>
+              <div class="description">
+                Librería de UI para interfaces dinámicas
+              </div>
+            </div>
+            <!-- Spring Boot -->
+            <div class="cell backend">
+              <img
+                src="./images/springbootlogo.png"
+                alt="Spring Boot Logo"
+                class="skill-logo"
+              />
+              <div class="title">Spring Boot</div>
+              <div class="description">
+                Marco de trabajo para aplicaciones Java
+              </div>
+            </div>
+            <!-- .NET -->
+            <div class="cell backend">
+              <img
+                src="./images/dotnet-icon.svg"
+                alt=".NET Logo"
+                class="skill-logo"
+              />
+              <div class="title">.NET</div>
+              <div class="description">
+                Framework versátil para desarrollo de aplicaciones
+              </div>
+            </div>
+            <!-- Apache -->
+            <div class="cell backend">
+              <img
+                src="./images/Apache_logo_PNG7.png"
+                alt="Apache Logo"
+                class="skill-logo"
+              />
+              <div class="title">Apache</div>
+              <div class="description">Servidor Web Versátil</div>
+            </div>
+            <!-- MySQL -->
+            <div class="cell bases-datos">
+              <!-- <a href="https://www.flaticon.com/free-icons/mysql" title="mysql icons">Mysql icons created by Freepik - Flaticon</a> -->
+              <img
+                src="./images/mysqlicon.png"
+                alt="MySQL"
+                class="skill-logo"
+              />
+              <div class="title">MySQL</div>
+              <div class="description">
+                Sistema de gestión de bases de datos SQL
+              </div>
+            </div>
+            <!-- MariaDB -->
+            <div class="cell bases-datos">
+              <img
+                src="./images/mariadb.svg"
+                alt="MariaDB"
+                class="skill-logo"
+              />
+              <div class="title">MariaDB</div>
+              <div class="description">
+                Base de datos SQL escalable y robusta
+              </div>
+            </div>
+            <!-- PostgreSQL -->
+            <div class="cell bases-datos">
+              <!-- <a href="https://iconscout.com/icons/postgresql" class="text-underline font-size-sm" target="_blank">Postgresql</a> by <a href="https://iconscout.com/contributors/icon-mafia" class="text-underline font-size-sm">Icon Mafia</a> on <a href="https://iconscout.com" class="text-underline font-size-sm">IconScout</a> -->
+              <img
+                src="./images/postgresql.svg"
+                alt="PostgrSQL"
+                class="skill-logo"
+              />
+              <div class="title">PostgreSQL</div>
+              <div class="description">
+                Sistema de gestión de bases de datos objeto-relacional
+              </div>
+            </div>
+            <!-- OracleDB -->
+            <div class="cell bases-datos">
+              <img
+                src="./images/oracle_logo_icon_168919.svg"
+                alt="OracleDB"
+                class="skill-logo"
+              />
+              <div class="title">OracleDB</div>
+              <div class="description">
+                Sistema de gestión de bases de datos relacional
+              </div>
+            </div>
+            <!-- SQL Server -->
+            <div class="cell bases-datos">
+              <img
+                src="./images/sql-server-icon-png-11377.png"
+                alt="SQL Server"
+                class="skill-logo"
+              />
+              <div class="title">SQL Server</div>
+              <div class="description">
+                Sistema de gestión de bases de datos relacionales
+              </div>
+            </div>
+            <!-- WordPress -->
+            <div class="cell otras-herramientas">
+              <!-- <a href="https://www.flaticon.com/free-icons/wordpress" title="wordpress icons">Wordpress icons created by Freepik - Flaticon</a> -->
+              <img
+                src="./images/wordpress.png"
+                alt="WordPress"
+                class="skill-logo"
+              />
+              <div class="title">WordPress</div>
+              <div class="description">Gestor de Contenidos Web</div>
+            </div>
+            <!-- Adobe XD -->
+            <div class="cell otras-herramientas">
+              <!-- <a href="https://www.flaticon.com/free-icons/xd" title="xd icons">Xd icons created by Maniprasanth - Flaticon</a> -->
+              <img src="./images/xd.png" alt="Adobe XD" class="skill-logo" />
+              <div class="title">Adobe XD</div>
+              <div class="description">Diseño UX/UI</div>
+            </div>
+            <!-- Figma -->
+            <div class="cell otras-herramientas">
+              <!-- <a href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons created by Freepik - Flaticon</a> -->
+              <img src="./images/figma.png" alt="Figma" class="skill-logo" />
+              <div class="title">Figma</div>
+              <div class="description">
+                Herramienta de Diseño y Prototipado UI/UX
+              </div>
+            </div>
+            <!-- Git -->
+            <div class="cell otras-herramientas">
+              <!-- <a href="https://www.flaticon.com/free-icons/commit-git" title="commit git icons">Commit git icons created by Afian Rochmah Afif - Flaticon</a> -->
+              <img src="./images/git.png" alt="Git" class="skill-logo" />
+              <div class="title">Git</div>
+              <div class="description">Sistema de Control de Versiones</div>
+            </div>
+            <!-- GitHub -->
+            <div class="cell otras-herramientas">
+              <!-- <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Pixel perfect - Flaticon</a> -->
+              <img src="./images/github.png" alt="GitHub" class="skill-logo" />
+              <div class="title">GitHub</div>
+              <div class="description">
+                Plataforma de control de versiones y colaboración de código
+              </div>
+            </div>
+            <!-- Más celdas siguiendo el mismo patrón -->
+          </div>
+        </section>
+      </section>
+
+      <section class="education">
+        <h2>Educación y Certificaciones</h2>
+        <ul class="education-list">
+          <li class="education-item">
+            <div class="education-content">
+              <h3>
+                Ingeniería en Tecnologías de la Información y Comunicaciones
+              </h3>
+              <span class="education-date"
+                >Instituto Tecnologico de Puebla - Agosto 2018 a Agosto
+                2023</span
+              >
+              <p class="education-description">
+                Como ingeniero en TICs, integro informática, telecomunicaciones
+                y sistemas, innovando constantemente en la era digital.
+              </p>
+            </div>
+          </li>
+          <li class="education-item">
+            <div class="education-content">
+              <h3>The Complete SQL Bootcamp: Go from Zero to Hero</h3>
+              <span class="education-date">Udemy - Mayo 2023</span>
+              <p class="education-description">
+                Completé un curso integral de SQL, dominando PostgreSQL,
+                análisis de datos y consultas avanzadas. A través de retos
+                prácticos y ejemplos reales, potencié mi carrera en el ámbito de
+                los datos.
+              </p>
+            </div>
+          </li>
+          <li class="education-item">
+            <div class="education-content">
+              <h3>Frontend Developer</h3>
+              <span class="education-date">Platzi - Abril 2022</span>
+              <p class="education-description">
+                Perfeccioné mis habilidades en HTML y CSS, dominando la
+                estructura de documentos HTML y las propiedades de CSS. Diseñé
+                las interfaces principales de mi sitio web, implementando
+                responsive design. Mi viaje en Platzi me encaminó a ser un
+                desarrollador Frontend competente.
+              </p>
+            </div>
+          </li>
+          <li class="education-item">
+            <div class="education-content">
+              <h3>Introducción al Diseño</h3>
+              <span class="education-date">Platzi - Noviembre 2020</span>
+              <p class="education-description">
+                Durante mi formación, dominé herramientas y técnicas clave para
+                crear diseños estéticos y funcionales de alta calidad.
+                Desarrollé mi primer proyecto gráfico, fusionando creatividad e
+                innovación.
+              </p>
+            </div>
+          </li>
+          <li class="education-item">
+            <div class="education-content">
+              <h3>Programación Básica</h3>
+              <span class="education-date">Platzi - Octubre 2023</span>
+              <p class="education-description">
+                Programa desde cero, domina Javascript, entiende HTML y aprende
+                de algoritmos. Sí, desde cero. Entenderás la lógica del código,
+                cómo piensan las programadoras expertas y cómo programar un
+                videojuego web de principio a fin. Aprender a programar no es
+                fácil, pero Platzi lo hace efectivo.
+              </p>
+            </div>
+          </li>
+          <!-- Repite para cada certificación o título -->
+        </ul>
+      </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+      <nav>
+        <!-- Menú de navegación secundario (puedes poner enlaces diferentes aquí) -->
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./aboutme.html">Sobre Mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="./contact.html">Contacto</a></li>
+          <!-- Puedes agregar más elementos a la lista si lo necesitas -->
+        </ul>
+      </nav>
+      <p>&copy; 2024 - Jorge Levi Tapia Lugardo</p>
+    </footer>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

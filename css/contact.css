@@ -1,0 +1,106 @@
+:root {
+  --color-primary: #007bff;
+  --color-primary-dark: #0056b3;
+  --color-background: #f4f4f4;
+  --color-text: #333;
+  --color-footer: #222;
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  background: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Ajustes para Flexbox Sticky Footer */
+body,
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow var(--transition-speed);
+}
+
+.contact-container:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: var(--color-text);
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media h2 {
+  margin-bottom: 10px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color var(--transition-speed), transform var(--transition-speed);
+}
+
+.social-media a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .contact-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .contact-info p,
+  .social-media a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-info p,
+  .social-media a {
+    font-size: 0.9em;
+  }
+
+  .social-media a {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .social-media a {
+    display: block;
+    margin: 10px 0;
+  }
+}
